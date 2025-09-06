@@ -1,4 +1,4 @@
-const mailListItem = [
+export const MailListItem = [
     {
         id: 1,
         address: "example@mail.com",
@@ -19,4 +19,3 @@ const mailListItem = [
     },
 ];
 
-export default mailListItem;

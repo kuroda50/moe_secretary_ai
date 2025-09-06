@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MailItem from './MailItem';
-import MailListItem from './MailListItem';
+import { MailListItem } from './MailListItem';
 
 export const MailList = () => {
   const [selectedId, setSelectedId] = useState(null);
@@ -13,6 +13,7 @@ export const MailList = () => {
     <div>
       {MailListItem.map((mail) => (
         <MailItem
+
           mail={mail}
           isSelected={mail.id === selectedId}
           onClick={handleSelect}

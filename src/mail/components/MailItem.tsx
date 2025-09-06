@@ -1,12 +1,13 @@
-const MailItem = ({ mail, isSelected, onClick }) => {
+const MailItem = ({ mail, isSelected, onClick,  }) => {
   return (
     <div
       className={`mail-item ${isSelected ? 'selected' : ''}`}
       onClick={() => onClick(mail.id)}
     >
-      <div>{mail.address}</div>
-      <div>{mail.title}</div>
-      <div>{mail.body}</div>
+        {/* ここはAPIから取得 */}
+      <div>{mail.id}.
+        {/* 詳細画面に飛ぶ */}
+        {mail.title}</div>
     </div>
   );
 };
