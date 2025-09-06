@@ -11,12 +11,14 @@ export const MailList = () => {
 
   return (
     <div>
+      <h1>メールを選んでね</h1>
       {MailListItem.map((mail) => (
         <MailItem
 
           mail={mail}
           isSelected={mail.id === selectedId}
           onClick={handleSelect}
+          
         />
       ))}
     </div>

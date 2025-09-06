@@ -8,7 +8,6 @@ function App() {
     <div>
         <BrowserRouter>
           <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
-            <h1>📬 メールアプリ</h1>
             <Routes>
               <Route path="/" element={<MailList />} />
               <Route path="/mail/:id" element={<MailDetail />} />

@@ -16,7 +16,6 @@ export const MailDetail = () => {
       <p><strong>送信者:</strong> {mail.address}</p>
       <p><strong>件名:</strong> {mail.title}</p>
       <p><strong>本文:</strong> {mail.body}</p>
-      <p>{mail.body}</p>
     </div>
   );
 };
